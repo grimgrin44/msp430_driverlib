@@ -9,7 +9,8 @@
 #define SPI_H_
 
 
-
+void spi_init(uint32_t base, uint32_t baud);
+void spi_advanced_init(uint32_t base, uint16_t baudReg);
 
 
 #endif /* SPI_H_ */
