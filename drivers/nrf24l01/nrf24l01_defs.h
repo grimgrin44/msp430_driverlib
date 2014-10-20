@@ -103,34 +103,47 @@
 #define NRF_BIT_TX_DS			(BIT_5)
 #define NRF_BIT_RX_DR			(BIT_6)
 
+/* OBSERVE_TX register */
+#define NRF_BITF_ARC_CNT		(0x0fu)
+#define NRF_BITF_PLOS_CNT		(0xf0u)
 
+/* CD register */
+#define NRF_BIT_CD				(BIT_0)
 
+/* FIFO_STATUS register */
+#define NRF_BIT_RX_EMPTY		(BIT_0)
+#define NRF_BIT_RX_FULL			(BIT_1)
+#define NRF_BIT_TX_EMPTY		(BIT_4)
+#define NRF_BIT_TX_FULL			(BIT_5)
+#define NRF_BIT_TX_REUSE		(BIT_6)
 
+/* DYNPD register */
+#define NRF_BIT_DPL_P0			(BIT_0)
+#define NRF_BIT_DPL_P1			(BIT_1)
+#define NRF_BIT_DPL_P2			(BIT_2)
+#define NRF_BIT_DPL_P3			(BIT_3)
+#define NRF_BIT_DPL_P4			(BIT_4)
+#define NRF_BIT_DPL_P5			(BIT_5)
 
+/* FEATURE register */
+#define NRF_BIT_EN_DYN_ACK		(BIT_0)
+#define NRF_BIT_EN_ACK_PAY		(BIT_1)
+#define NRF_BIT_EN_DPL			(BIT_2)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Command definitions */
+#define NRF_CMD_R_REGISTER		(0x00u)
+#define NRF_CMD_R_REGISTER_MASK	(0x1fu)
+#define NRF_CMD_W_REGISTER		(0x20u)
+#define NRF_CMD_W_REGISTER_MASK	(0x3fu)
+#define NRF_CMD_R_RX_PAYLOAD	(0x61u)
+#define NRF_CMD_W_TX_PAYLOAD	(0xa0u)
+#define NRF_CMD_FLUSH_TX		(0xe1u)
+#define NRF_CMD_FLUSH_RX		(0xe2u)
+#define NRF_CMD_REUSE_TX_PL		(0xe3u)
+#define NRF_CMD_ACTIVATE		(0x50u)
+#define NRF_CMD_R_RX_PL_WID		(0x60u)
+#define NRF_CMD_W_ACK_PAYLOAD	(0xa8u)
+#define NRF_CMD_W_TX_PAYLOAD_NOACK	(0xb0u)
+#define NRF_CMD_NOP				(0xffu)
 
 #endif /* NRF24L01_DEFS_H_ */

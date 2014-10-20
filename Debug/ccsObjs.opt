@@ -1,0 +1,1 @@
+"./drivers/nrf24l01/nrf24l01.obj" "./drivers/adxl345/adxl345.obj" "./MSP430FR57xx/spi/spi.obj" 
